@@ -7,4 +7,4 @@ RUN apt install -y educaandos-system educaandos-educacion educaandos-software-ce
 COPY contrasena.sh /root/contrasena.sh
 RUN contrasena.sh
 EXPOSE 5900
-CMD ["bash"]
+CMD ["vncserver"]
