@@ -5,5 +5,6 @@ EXEC dpkg -i educaandos-keyring_0.3-4_amd64.deb
 EXEC apt update
 EXEC apt install -y educaandos-system educaandos-educacion educaandos-software-center educaandos-languages educaandos-educacion-tic educaandos-educacion-tic-cgaconfig educaandos-educacion-cgaconfig educaandos-dnie educaandos-dmic-audio-path educaandos-artwork tigervnc-standalone-server
 COPY contrasena.sh /root/contrasena.sh
+EXEC contrasena.sh
 EXPOSE 5900
 CMD ["bash"]
